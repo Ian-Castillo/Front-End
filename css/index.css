@@ -138,7 +138,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-header {
+.headerOne {
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -147,7 +147,7 @@ header {
   height: auto;
   background-color: black;
 }
-header .logo {
+.headerOne .logo {
   display: block;
   width: 200px;
   height: 80px;
@@ -155,12 +155,12 @@ header .logo {
   margin-top: 50px;
   margin-bottom: 25px;
 }
-header nav {
+.headerOne .navSection {
   margin-top: 50px;
   display: flex;
   align-items: center;
 }
-header nav a {
+.headerOne .navSection .aSection {
   padding: 10px 15px 10px 15px;
   color: white;
   margin-right: 25px;
@@ -170,7 +170,7 @@ header nav a {
   border-radius: 5px;
 }
 @media screen and (min-width: 510px) and (max-width: 1000px) {
-  header {
+  .headerOne {
     color: white;
     position: relative;
     display: flex;
@@ -181,20 +181,20 @@ header nav a {
     overflow-y: auto;
     background-color: black;
   }
-  header .logo {
+  .headerOne .logo {
     margin: auto;
     max-height: 80px;
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  header nav {
+  .headerOne .navSection {
     color: white;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  header nav a {
+  .headerOne .navSection .aSection {
     color: white;
     margin: auto;
     font-size: 3rem;
@@ -203,40 +203,9 @@ header nav a {
     border-radius: 5px;
     margin-bottom: 15px;
   }
-  header nav .overLink:hover {
-    background-color: black;
-  }
-  header nav input {
-    display: none;
-    border: none;
-    border: solid 1px black;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    height: 55px;
-    font-size: 22px;
-    padding: 10px;
-  }
-  header nav .signUp {
-    display: none;
-    margin-bottom: 13px;
-    height: auto;
-    width: auto;
-    padding: 10px 15px 15px 10px;
-    font-size: 2.4rem;
-    color: black;
-    font-weight: bold;
-    background-color: #D3D3D3;
-    border: 2px solid #708090;
-    border-radius: 10px;
-    margin-top: -10px;
-    margin-right: 25px;
-  }
-  header nav .signUp:hover {
-    background-color: #DCDCDC;
-  }
 }
 @media screen and (max-width: 500px) {
-  header {
+  .headerOne {
     color: white;
     position: relative;
     display: flex;
@@ -247,21 +216,21 @@ header nav a {
     overflow-y: auto;
     background-color: black;
   }
-  header .logo {
+  .headerOne .logo {
     display: block;
     margin: auto;
     max-height: 80px;
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  header nav {
+  .headerOne .navSection {
     color: white;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  header nav a {
+  .headerOne .navSection .aSection {
     color: white;
     margin: auto;
     font-size: 3rem;
@@ -269,37 +238,6 @@ header nav a {
     text-decoration: none;
     border-radius: 5px;
     margin-bottom: 15px;
-  }
-  header nav .overLink:hover {
-    background-color: black;
-  }
-  header nav input {
-    display: none;
-    border: none;
-    border: solid 1px black;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    height: 55px;
-    font-size: 22px;
-    padding: 10px;
-  }
-  header nav .signUp {
-    display: none;
-    margin-bottom: 13px;
-    height: auto;
-    width: auto;
-    padding: 10px 15px 15px 10px;
-    font-size: 2.4rem;
-    color: black;
-    font-weight: bold;
-    background-color: #D3D3D3;
-    border: 2px solid #708090;
-    border-radius: 10px;
-    margin-top: -10px;
-    margin-right: 25px;
-  }
-  header nav .signUp:hover {
-    background-color: #DCDCDC;
   }
 }
 .main-content {

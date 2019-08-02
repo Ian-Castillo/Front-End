@@ -25,3 +25,18 @@ console.log("panels",panels)
 panels.forEach( (panelElement) => {
   return new Panel(panelElement);
 })
+
+let header = document.querySelectorAll(".aSection");
+for (var i = 0; i < header.length; i++)
+ (function(i) {
+   header[i].addEventListener("mouseover", function(event) {
+     event.target.style.background = "#DCDCDC";
+   });
+ })(i);
+let headerOut = document.querySelectorAll(".aSection");
+for (var i = 0; i < headerOut.length; i++)
+ (function(i) {
+   headerOut[i].addEventListener("mouseout", function(event) {
+     event.target.style.background = "black";
+   });
+ })(i);

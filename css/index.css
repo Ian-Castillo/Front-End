@@ -1,3 +1,15 @@
+.btnMix {
+  margin-bottom: 13px;
+  height: auto;
+  width: auto;
+  padding: 10px 15px 15px 10px;
+  font-size: 2.4rem;
+  color: black;
+  font-weight: bold;
+  background-color: #D3D3D3;
+  border: 2px solid #708090;
+  border-radius: 10px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -125,4 +137,266 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  border-bottom: 1px solid #DCDCDC;
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+header .logo {
+  display: block;
+  width: 200px;
+  height: 80px;
+  margin-left: 5px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+header nav {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  padding: 10px 15px 10px 15px;
+  color: white;
+  margin-right: 25px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+@media screen and (min-width: 510px) and (max-width: 1000px) {
+  header {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid white;
+    height: auto;
+    overflow-y: auto;
+    background-color: black;
+  }
+  header .logo {
+    margin: auto;
+    max-height: 80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  header nav {
+    color: white;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav a {
+    color: white;
+    margin: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  header nav .overLink:hover {
+    background-color: black;
+  }
+  header nav input {
+    display: none;
+    border: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 55px;
+    font-size: 22px;
+    padding: 10px;
+  }
+  header nav .signUp {
+    display: none;
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
+    margin-top: -10px;
+    margin-right: 25px;
+  }
+  header nav .signUp:hover {
+    background-color: #DCDCDC;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    height: auto;
+    overflow-y: auto;
+    background-color: black;
+  }
+  header .logo {
+    display: block;
+    margin: auto;
+    max-height: 80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  header nav {
+    color: white;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav a {
+    color: white;
+    margin: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  header nav .overLink:hover {
+    background-color: black;
+  }
+  header nav input {
+    display: none;
+    border: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 55px;
+    font-size: 22px;
+    padding: 10px;
+  }
+  header nav .signUp {
+    display: none;
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
+    margin-top: -10px;
+    margin-right: 25px;
+  }
+  header nav .signUp:hover {
+    background-color: #DCDCDC;
+  }
+}
+.main-content {
+  padding: 200px 0px 0px 0px;
+  margin-bottom: 20px;
+}
+.secondary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.secondary .htext {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.secondary .ptext {
+  font-size: 1.2rem;
+}
+.secondary .panel {
+  width: 500px;
+}
+@media screen and (max-width: 500px) {
+  .main-content {
+    padding: 20px 15px 15px 0px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .secondary .htext {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .secondary .ptext {
+    font-size: 1.2rem;
+  }
+  .secondary .panel {
+    width: auto;
+    padding: 0px 20px 20px 0px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  .main-content {
+    width: auto;
+    padding: 20px 15px 15px 0px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .panel {
+    width: auto;
+    padding: 0px 20px 20px 0px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #000000;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+body {
+  color: white;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+p {
+  margin: 20px 0;
+  line-height: 1.25;
+}
+.home .accordion .panel {
+  padding: 30px;
+  border: 1px solid white;
+}
+.home .accordion .panel .panel-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.home .accordion .panel .panel-bar .panel-buttons button {
+  cursor: pointer;
+}
+.home .accordion .panel .panel-bar .panel-buttons .hide-btn {
+  display: none;
+}
+.home .accordion .panel .panel-content {
+  display: none;
+}
+.home .accordion .panel .toggle-on {
+  display: block;
 }
